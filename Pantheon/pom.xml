@@ -11,9 +11,10 @@
 
 	<properties>
 		<spring.version>4.1.1.RELEASE</spring.version>
-		<jdk-compiler-version>1.8</jdk-compiler-version>
+		<jdk-compiler-version>1.7</jdk-compiler-version>
 		<jdk-source-version>1.8</jdk-source-version>
 		<jdk-target-version>1.8</jdk-target-version>
+		<hibernate.version>3.6.9.Final</hibernate.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
@@ -75,7 +76,7 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
 				<version>1.8</version>
@@ -93,7 +94,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
 		</plugins>
 
 	</build>
@@ -140,6 +141,17 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
 		</dependency>
 	</dependencies>
 </project>
