@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "problem_management")
 public class ProblemManagement implements Serializable {
-	private static final long SerialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	private Long id;
 	private String createdBy;

@@ -10,8 +10,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "risk_management")
 public class RiskManagement implements Serializable{
-	private static final long SerialVersionUID = 1L;
-	
+	private static final long serialVersionUID = 1L;
+
 	private Long id;
 	private String createdBy;
 	private String probability;
