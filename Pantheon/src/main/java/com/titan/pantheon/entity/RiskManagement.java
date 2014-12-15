@@ -2,12 +2,18 @@ package com.titan.pantheon.entity;
 
 import java.io.Serializable;
 
-public class RiskManagementBean implements Serializable{
-	
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "risk_management")
+public class RiskManagement implements Serializable{
 	private static final long SerialVersionUID = 1L;
 	
 	private Long id;
-	private String from;
+	private String createdBy;
 	private String probability;
 	private String impactLevel;
 	private String riskDescription;
@@ -15,17 +21,18 @@ public class RiskManagementBean implements Serializable{
 	private String status;
 	private String owner;
 	
+	@Id
 	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getFrom() {
-		return from;
+	public String getCreatedBy() {
+		return createdBy;
 	}
-	public void setFrom(String from) {
-		this.from = from;
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
 	}
 	public String getProbability() {
 		return probability;
@@ -42,6 +49,7 @@ public class RiskManagementBean implements Serializable{
 	public String getRiskDescription() {
 		return riskDescription;
 	}
+	@Column(columnDefinition = "text")
 	public void setRiskDescription(String riskDescription) {
 		this.riskDescription = riskDescription;
 	}
