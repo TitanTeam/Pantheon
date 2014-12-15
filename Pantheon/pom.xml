@@ -12,8 +12,6 @@
 	<properties>
 		<spring.version>4.1.1.RELEASE</spring.version>
 		<jdk-compiler-version>1.7</jdk-compiler-version>
-		<jdk-source-version>1.8</jdk-source-version>
-		<jdk-target-version>1.8</jdk-target-version>
 		<hibernate.version>3.6.9.Final</hibernate.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
